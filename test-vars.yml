@@ -1,11 +1,36 @@
 ---
-key_1: value_1
-key_2: value_2
-key_3: 
-   - item_1
-   - item_2   
-   - item_3   
-key4:
+regions:
+   - name:  region_2
+     ns: pro_porepoerere
+     vars: 
+        DEV: 
+            var_1: pro_porepoerere_DEV_1
+            var_2: pro_porepoerere_DEV_2
+        TEST:
+            var_1: pro_porepoerere_TEST_1
+            var_2: pro_porepoerere_TEST_2        
+        PRO:
+            var_1: pro_porepoerere_PRO_1
+            var_2: pro_porepoerere_PRO_2
+        PRE:
+            var_1: pro_porepoerere_PRE_1
+   - name:  region_1
+     ns: test
+     vars: 
+        DEV: 
+            var_1: test_DEV_1
+            var_2: test_DEV_2
+        TEST:
+            var_1: test_TEST_1
+            var_2: test_TEST_2        
+        PRO:
+            var_1: test_PRO_1
+            var_2: test_PRO_2        
+        PRE:
+            var_1: test_PRE_1
+            var_2: test_PRE_2
+ 
+global_vars:
    data: test
-   env: test
+   env: $ENV
    status: f5
